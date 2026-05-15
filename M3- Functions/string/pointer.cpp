@@ -14,9 +14,9 @@ cout << "var is now: " << var << endl;  // 100
 
 // Pointer arithmetic with arrays
 int arr[] = {10, 20, 30, 40, 50};
-int* p = arr;
-for (int i = 0; i < 5; i++)
-    cout << *(p + i) << " ";  // 10 20 30 40 50
+int* p = &arr[2];
+for (int x = 0; x < 5; x++)
+    cout << *(p + x) << " ";  // 10 20 30 40 50
 
 return 0;
 }
